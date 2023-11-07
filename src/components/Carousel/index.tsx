@@ -9,12 +9,6 @@ export function Carousel() {
       <Button styleType="tertiary">Solicite uma cotação</Button>
 
       <img src={mobileBanner} />
-
-      <div className={styles.dotWrapper}>
-        <div className={styles.dot}></div>
-        <div className={styles.dot}></div>
-        <div className={styles.dot}></div>
-      </div>
     </div>
   );
 }
