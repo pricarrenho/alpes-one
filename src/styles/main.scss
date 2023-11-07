@@ -1,4 +1,5 @@
-// @use 'variables'
+@import "./fonts.scss";
+
 * {
   margin: 0px;
   padding: 0px;
@@ -7,4 +8,8 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: "BMWTypeNext", sans-serif;
 }

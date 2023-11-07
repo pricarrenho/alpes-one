@@ -1,1 +1,49 @@
 @import "/src/styles/variables.scss";
+
+.cardCarWrapper {
+  padding: 30px 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  line-height: 26px;
+  font-weight: lighter;
+  color: $neutral-600;
+}
+
+.subtitle {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: lighter;
+  color: $neutral-600;
+  margin-top: 10px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 16px;
+  padding: 20px 0px;
+
+  button {
+    flex: 1;
+  }
+}
+
+.shareWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0px;
+
+  p {
+    font-size: 12px;
+    line-height: 15px;
+    color: $neutral-400;
+  }
+}
