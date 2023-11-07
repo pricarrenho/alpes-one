@@ -1,0 +1,33 @@
+@import "/src/styles/variables.scss";
+
+.banner {
+  position: absolute;
+
+  button {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: 432px;
+  }
+}
+
+.dotWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  .dot:first-child {
+    background-color: $blueLight-color;
+  }
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background-color: $white-color;
+  border-radius: 50%;
+  position: relative;
+  bottom: 40px;
+}
