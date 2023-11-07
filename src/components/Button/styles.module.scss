@@ -34,6 +34,9 @@
 .tertiary {
   @extend .button;
   background-color: $blueLight-color;
+  text-transform: none;
+  font-size: 14px;
+  font-weight: bold;
 
   &:hover {
     background-color: $blueDark-color;
