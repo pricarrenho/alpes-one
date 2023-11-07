@@ -1,11 +1,13 @@
 @import "/src/styles/variables.scss";
 
+.footerBg {
+  background-color: $neutral-100;
+}
+
 .footerWrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 30px 16px;
-  background-color: $neutral-100;
   gap: 30px;
 }
 
@@ -14,12 +16,39 @@
   color: $neutral-600;
   text-align: center;
   line-height: 16px;
+
+  @media (min-width: 800px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .divider {
-  width: 328px;
+  width: 100%;
   border: 1px solid $neutral-200;
   opacity: 0.4;
+}
+
+.copyWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  @media (min-width: 800px) {
+    font-size: 14px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  display: none;
+
+  @media (min-width: 800px) {
+    display: block;
+  }
 }
 
 .madeFor {
