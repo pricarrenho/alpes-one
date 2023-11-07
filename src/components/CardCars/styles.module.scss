@@ -1,12 +1,44 @@
 @import "/src/styles/variables.scss";
 
 .cardCarWrapper {
-  padding: 30px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 800px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .content {
   display: flex;
   flex-direction: column;
+}
+
+.carImage {
+  img {
+    object-fit: contain;
+  }
+
+  @media (min-width: 800px) {
+    img {
+      max-width: 100%;
+    }
+  }
 }
 
 .title {
@@ -15,6 +47,10 @@
   line-height: 26px;
   font-weight: lighter;
   color: $neutral-600;
+
+  @media (min-width: 800px) {
+    padding-bottom: 30px;
+  }
 }
 
 .subtitle {
@@ -32,6 +68,12 @@
 
   button {
     flex: 1;
+  }
+
+  @media (min-width: 800px) {
+    button:last-child {
+      display: none;
+    }
   }
 }
 

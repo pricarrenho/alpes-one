@@ -10,8 +10,9 @@ import Serie2 from "../../assets/img/serie2.png";
 import { Button } from "../Button";
 import { Whatsapp } from "../../assets/svg/Whatsapp";
 import { Facebook } from "../../assets/svg/Facebook";
+import { Container } from "../Container";
 
-export function CardCar() {
+export function CardCars() {
   const cars = [
     {
       title: "BMW Série 1",
@@ -72,33 +73,46 @@ export function CardCar() {
   ];
 
   return (
-    <div className={styles.cardCarWrapper}>
-      <h1 className={styles.title}>ESCOLHA SEU BMW</h1>
+    <Container>
+      <div className={styles.cardCarWrapper}>
+        <h1 className={styles.title}>ESCOLHA SEU BMW</h1>
 
-      {cars.map((car) => {
-        return (
-          <div className={styles.content}>
-            <img src={car.image.url} alt={car.image.alt} />
-            <h2 className={styles.subtitle}>{car.title}</h2>
+        <div className={styles.contentWrapper}>
+          {cars.map((car) => {
+            return (
+              <div className={styles.content}>
+                <img
+                  src={car.image.url}
+                  alt={car.image.alt}
+                  width={315}
+                  height={172}
+                  className={styles.carImage}
+                  loading="lazy"
+                />
 
-            <div className={styles.buttonsWrapper}>
-              <Button styleType="tertiary">Cotação</Button>
-              <Button styleType="quaternary">Ligar</Button>
-            </div>
+                <h2 className={styles.subtitle}>{car.title}</h2>
 
-            <div className={styles.shareWrapper}>
-              <p>Compartilhe:</p>
-              <a href="#">
-                <Facebook color="#666666" size={24} />
-              </a>
+                <div className={styles.buttonsWrapper}>
+                  <Button styleType="tertiary">Cotação</Button>
 
-              <a href="#">
-                <Whatsapp color="#666666" size={24} />
-              </a>
-            </div>
-          </div>
-        );
-      })}
-    </div>
+                  <Button styleType="quaternary">Ligar</Button>
+                </div>
+
+                <div className={styles.shareWrapper}>
+                  <p>Compartilhe:</p>
+                  <a href="#">
+                    <Facebook color="#666666" size={24} />
+                  </a>
+
+                  <a href="#">
+                    <Whatsapp color="#666666" size={24} />
+                  </a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </Container>
   );
 }
