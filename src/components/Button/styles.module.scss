@@ -1,1 +1,46 @@
 @import "/src/styles/variables.scss";
+
+.button {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 18px;
+  border: none;
+  text-transform: uppercase;
+  color: $white-color;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.primary {
+  @extend .button;
+  background-color: $black-color;
+
+  &:hover {
+    background-color: $neutral-500;
+  }
+}
+
+.secondary {
+  @extend .button;
+  background-color: $greenLight-color;
+
+  &:hover {
+    background-color: $greenDark-color;
+  }
+}
+
+.tertiary {
+  @extend .button;
+  background-color: $blueLight-color;
+
+  &:hover {
+    background-color: $blueDark-color;
+  }
+}
+
+.quaternary {
+  @extend .button;
+  background-color: $neutral-400;
+}

@@ -1,5 +1,13 @@
 // import styles from "./styles.module.scss";
 
+import { Button } from "../Button";
+
 export function Header() {
-  return <h1>Header</h1>;
+  return (
+    <div>
+      <Button icon="whatsapp" styleType="secondary">
+        Whatsapp
+      </Button>
+    </div>
+  );
 }
