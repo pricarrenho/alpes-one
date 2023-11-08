@@ -1,0 +1,53 @@
+@import "/src/styles/variables.scss";
+
+.formWrapper {
+  background-color: $white-color;
+  box-shadow: 0px 3px 6px #00000029;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  gap: 30px;
+}
+
+.formTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  h2 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: lighter;
+  }
+}
+
+.selectInput {
+  border: none;
+  border-bottom: 1px solid $neutral-200;
+  background-color: $white-color;
+  color: $neutral-400;
+  padding: 14px 0px;
+  width: 171.5px;
+  outline: none;
+}
+
+.checkboxInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: $neutral-400;
+
+  label {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: lighter;
+  }
+
+  span {
+    font-weight: bold;
+  }
+}
