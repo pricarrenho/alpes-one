@@ -1,13 +1,17 @@
 @import "/src/styles/variables.scss";
 
-.headerWrapper {
+.headerWrapperMobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 16px;
+  padding: 20px 0px;
+
+  @media (min-width: 800px) {
+    display: none;
+  }
 }
 
-.phone {
+.contactMobile {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -15,6 +19,40 @@
   p {
     font-size: 14px;
     font-weight: bold;
+    color: $neutral-400;
+  }
+}
+
+.headerWrapperDesktop {
+  display: none;
+
+  @media (min-width: 800px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+  }
+}
+
+.contactDesktop {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.ruler {
+  display: flex;
+  gap: 57px;
+
+  p {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 19px;
     color: $neutral-400;
   }
 }
