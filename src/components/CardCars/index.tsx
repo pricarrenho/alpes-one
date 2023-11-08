@@ -80,7 +80,7 @@ export function CardCars() {
         <div className={styles.contentWrapper}>
           {cars.map((car) => {
             return (
-              <div className={styles.content}>
+              <div className={styles.content} key={car.title}>
                 <img
                   src={car.image.url}
                   alt={car.image.alt}
