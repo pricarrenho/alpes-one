@@ -28,8 +28,6 @@ Clone the project and access the folder
 $ git clone https://github.com/pricarrenho/alpes-one && cd alpes-one
 ```
 
-````
-
 Follow the steps below
 
 ```bash
@@ -37,9 +35,9 @@ Follow the steps below
 $ npm install
 
 # Start the project
-$ npm start
+$ npm run dev
 
-````
+```
 
 Or with Yarn
 
@@ -48,7 +46,7 @@ Or with Yarn
 $ yarn install
 
 # Start the project
-$ yarn start
+$ yarn dev
 
 ```
 
