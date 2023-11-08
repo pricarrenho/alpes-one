@@ -3,12 +3,26 @@
 .formWrapper {
   background-color: $white-color;
   box-shadow: 0px 3px 6px #00000029;
+  padding: 0px;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  height: 100vh;
+
+  @media (min-width: 800px) {
+    position: unset;
+    width: 255px;
+    height: unset;
+  }
+}
+
+.form {
+  padding: 30px 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 20px;
-  gap: 30px;
+  gap: 20px;
 }
 
 .formTitle {
@@ -30,15 +44,18 @@
   background-color: $white-color;
   color: $neutral-400;
   padding: 14px 0px;
-  width: 171.5px;
   outline: none;
+  -webkit-appearance: none;
+  background: url("data:image/svg+xml,<svg width='11.2' height='7' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1.25 1.62549L8 8.37549L14.75 1.62549' stroke='%233d3d3d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>")
+    no-repeat;
+  background-position: calc(100% - 1rem) center !important;
 }
 
 .checkboxInput {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   color: $neutral-400;
 
   label {
@@ -49,5 +66,9 @@
 
   span {
     font-weight: bold;
+  }
+
+  @media (min-width: 800px) {
+    justify-content: center;
   }
 }
