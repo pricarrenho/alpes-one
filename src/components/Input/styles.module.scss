@@ -1,0 +1,18 @@
+@import "/src/styles/variables.scss";
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    border: none;
+    border-bottom: 1px solid $neutral-200;
+    outline: none;
+  }
+
+  label {
+    font-size: 14px;
+    line-height: 17px;
+    color: $neutral-400;
+  }
+}
