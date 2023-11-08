@@ -32,7 +32,10 @@ export function Footer() {
             <p className={styles.madeFor}>
               Feito por:{" "}
               <a href="https://alpes.one/" target="_blank">
-                <img src={LogoAlpes} alt="" />
+                <img
+                  src={LogoAlpes}
+                  alt="Logo com três setas apontadas para a direita. A primeira verde, a segunda azul e a terceira laranja. Em seguida escrito Alpes One"
+                />
               </a>
             </p>
           </div>

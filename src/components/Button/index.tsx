@@ -4,7 +4,14 @@ import { Whatsapp } from "../../assets/svg/Whatsapp";
 import { ButtonProps } from "./types";
 import styles from "./styles.module.scss";
 
-export function Button({ children, icon, styleType, as, href }: ButtonProps) {
+export function Button({
+  children,
+  icon,
+  styleType,
+  as,
+  href,
+  onClick,
+}: ButtonProps) {
   const icons = {
     phone: <Phone size={19} color="white" />,
     whatsapp: <Whatsapp size={19} color="white" />,
@@ -20,7 +27,7 @@ export function Button({ children, icon, styleType, as, href }: ButtonProps) {
   }
 
   return (
-    <button className={styles[styleType]}>
+    <button className={styles[styleType]} onClick={onClick}>
       {icon && icons[icon]} {children}
     </button>
   );

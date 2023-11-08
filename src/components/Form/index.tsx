@@ -4,9 +4,9 @@ import { Button } from "../Button";
 import { FormProps } from "./types";
 import styles from "./styles.module.scss";
 
-export function Form({ handleClose }: FormProps) {
+export function Form({ handleClose, hide }: FormProps) {
   return (
-    <div className={styles.formWrapper}>
+    <div className={`${styles.formWrapper} ${hide && styles.formHide}`}>
       <Button styleType="quaternary" onClick={handleClose}>
         Minimizar
       </Button>
