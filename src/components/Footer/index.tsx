@@ -5,7 +5,7 @@ import { Logo } from "../../assets/svg/Logo";
 
 export function Footer() {
   return (
-    <div className={styles.footerBg}>
+    <footer className={styles.footerBg}>
       <Container>
         <div className={styles.footerWrapper}>
           <p className={styles.paragraph}>
@@ -20,7 +20,9 @@ export function Footer() {
 
           <div className={styles.copyWrapper}>
             <div className={styles.logo}>
-              <Logo size={50} />
+              <a href="#">
+                <Logo size={50} />
+              </a>
             </div>
 
             <p className={styles.paragraph}>
@@ -28,11 +30,14 @@ export function Footer() {
             </p>
 
             <p className={styles.madeFor}>
-              Feito por: <img src={LogoAlpes} alt="" />
+              Feito por:{" "}
+              <a href="https://alpes.one/" target="_blank">
+                <img src={LogoAlpes} alt="" />
+              </a>
             </p>
           </div>
         </div>
       </Container>
-    </div>
+    </footer>
   );
 }

@@ -100,6 +100,7 @@ export function CardCars() {
 
                 <div className={styles.shareWrapper}>
                   <p>Compartilhe:</p>
+
                   <a href="#">
                     <Facebook color="#666666" size={24} />
                   </a>

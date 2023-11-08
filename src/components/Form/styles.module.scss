@@ -68,6 +68,10 @@
     font-weight: bold;
   }
 
+  input[type="checkbox"]:not(:checked) + label:hover {
+    color: $blueLight-color;
+  }
+
   @media (min-width: 800px) {
     justify-content: center;
   }

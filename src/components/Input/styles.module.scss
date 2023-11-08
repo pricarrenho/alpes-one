@@ -11,6 +11,14 @@
     padding: 10px 0;
   }
 
+  input:hover {
+    border-bottom: 2px solid $neutral-200;
+  }
+
+  input:focus {
+    border-bottom: 2px solid $blueLight-color;
+  }
+
   label {
     font-size: 14px;
     line-height: 17px;

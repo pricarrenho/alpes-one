@@ -1,9 +1,8 @@
-import styles from "./styles.module.scss";
-
 import { Logo } from "../../assets/svg/Logo";
 import { Phone } from "../../assets/svg/Phone";
 import { Button } from "../Button";
 import { Container } from "../Container";
+import styles from "./styles.module.scss";
 
 export function Header() {
   return (
@@ -11,26 +10,38 @@ export function Header() {
       <header className={styles.headerWrapperMobile}>
         <div className={styles.contactMobile}>
           <Phone size={19} color="#666666" />
-          <p>(21) 2042-4442</p>
+          <a href="tel:+552120424442">
+            <p>(21) 2042-4442</p>
+          </a>
         </div>
 
         <div>
-          <p>
+          <a href="#">
             <Logo size={35} />
-          </p>
+          </a>
         </div>
       </header>
 
       <header className={styles.headerWrapperDesktop}>
         <div className={styles.contactDesktop}>
           <div className={styles.buttonsWrapper}>
-            <Button styleType="primary" icon="phone">
+            <Button
+              styleType="primary"
+              icon="phone"
+              as="a"
+              href="tel:+552120424442"
+            >
               (21) 2042-4442
             </Button>
-            <Button styleType="primary" icon="tour">
+            <Button styleType="primary" icon="tour" as="a" href="#">
               Tour Virtual
             </Button>
-            <Button styleType="secondary" icon="whatsapp">
+            <Button
+              styleType="secondary"
+              icon="whatsapp"
+              as="a"
+              href="https://api.whatsapp.com/send?phone=5519994082808&text=Olá,%20tenho%20interesse%20em%20fazer%20um%20orçamento!"
+            >
               Whatsapp
             </Button>
           </div>
@@ -52,9 +63,9 @@ export function Header() {
         </div>
 
         <div>
-          <p>
+          <a href="#">
             <Logo size={92} />
-          </p>
+          </a>
         </div>
       </header>
     </Container>
